@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0b84ff" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#f3f7ff" stop-opacity="0.9" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#05214a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)"/>
+
+  <!-- Subtle background grid -->
+  <g opacity="0.06" stroke="#ffffff">
+    <pattern id="p" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M120 0 L0 0 L0 120" fill="none" stroke-width="1" />
+    </pattern>
+    <rect width="1200" height="700" fill="url(#p)"/>
+  </g>
+
+  <!-- Browser mockup card -->
+  <g transform="translate(80,60)" filter="url(#shadow)">
+    <rect width="1040" height="580" rx="16" ry="16" fill="url(#cardGrad)" />
+
+    <!-- Top bar -->
+    <rect x="18" y="16" width="1004" height="40" rx="8" fill="#eef4ff" />
+    <circle cx="46" cy="36" r="6" fill="#ff5f56" />
+    <circle cx="70" cy="36" r="6" fill="#ffbd2e" />
+    <circle cx="94" cy="36" r="6" fill="#27c93f" />
+
+    <!-- Hero area -->
+    <rect x="28" y="72" width="640" height="180" rx="8" fill="#0b1220" />
+    <text x="56" y="120" fill="#ffffff" font-size="28" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="700">Adil Mohammad — Designer & Developer</text>
+    <text x="56" y="155" fill="#9fb5ff" font-size="16" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">Crafting clean, responsive web experiences that convert visitors into clients.</text>
+
+    <!-- Project thumbnails -->
+    <g transform="translate(700,72)">
+      <rect width="300" height="180" rx="8" ry="8" fill="#07203b" />
+      <rect x="0" y="200" width="300" height="120" rx="8" ry="8" fill="#0b2750" />
+      <rect x="0" y="340" width="300" height="120" rx="8" ry="8" fill="#0f3a6a" />
+      <text x="18" y="110" fill="#ffffff" font-size="20" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="600">Project One</text>
+      <text x="18" y="238" fill="#cfe3ff" font-size="18" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="600">Project Two</text>
+      <text x="18" y="378" fill="#d6e9ff" font-size="18" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="600">Project Three</text>
+    </g>
+
+    <!-- Fake CTA button -->
+    <rect x="56" y="280" width="180" height="44" rx="22" fill="#0b84ff" />
+    <text x="90" y="310" fill="#fff" font-size="16" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="700">View projects</text>
+
+    <!-- Footer line inside card -->
+    <line x1="28" y1="540" x2="1068" y2="540" stroke="#e6eefc" stroke-width="1" opacity="0.7" />
+    <text x="36" y="566" fill="#556d9a" font-size="13" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">Built with HTML • Sass • JavaScript</text>
+  </g>
+
+  <!-- Small decorative devices -->
+  <g transform="translate(940,480) scale(0.7)">
+    <rect x="0" y="0" width="200" height="120" rx="12" fill="#fff" opacity="0.06" />
+  </g>
+
+  <!-- Watermark / signature -->
+  <text x="36" y="680" fill="#ffffff" font-size="12" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" opacity="0.6">Adil Mohammad — personal portfolio</text>
+</svg>
